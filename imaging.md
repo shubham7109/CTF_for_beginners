@@ -1,6 +1,6 @@
-         # IMAGING 
+# IMAGING 
 
-Check out [this] its really cool.
+Check [this] it has some good stuff for beginners.
 Instead of using ftk imager there are alternatives on linux like 
 
 - dd command (for converting drive to image)
