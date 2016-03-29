@@ -1,0 +1,221 @@
+////////////////////////////         IMPORTANT COMMANDS
+
+1)  cp(sudo cp - for admin rights)
+    
+    used to copy
+    cp <file_name> <address>
+    cp <file_name> <newname>
+    cp <file_name> <directory>
+    cp -r <directory> <adress>
+
+2)  sudo
+    -s can access root from normal terminal
+    refers to admin rights
+
+3)  cd
+    
+    used to move terminal to a directory
+    cd <address_that _can_be_seen_from_current_dir>
+    
+    NOTE: 
+    cd / takes u to filesystem
+    cd ~ takes u to /home/omegashenron
+    cd .. takes u out in directory
+    
+4)  pwd(print working directory)
+    
+    prints current directory
+    
+5)  mv 
+    
+    used to rename or move a file
+    
+    mv <filename> <newname>
+    mv <filename> <address>
+    
+6)  mkdir 
+    
+    used to create a directory
+    mkdir <directory>
+    mkdir <newaddress>
+    eg: sudo mkdir /mnt/usb/lol
+    
+7)  rm/rmdir
+    
+    used to delete file
+    rm <filename>
+    rmdir <empty_directory>
+    rm -r <direcctorywithstuff>
+    
+8)  man
+    
+    used to get help
+    eg: man cp
+    
+9)  du -sh
+    
+    used for memry space
+    
+10) free -m
+    
+    how mch free memory
+    
+11) top
+    table of processes
+    
+12) uname -a
+    system info
+13) lsb_release -a
+    system info
+ 
+14)	history 
+	The history command shows a very long list of commands that you have typed. 
+	Each command is displayed next to a number.
+ 	You can type !x to execute a previously typed command from the list (replace the X with a number). 
+	If you history output is too long, then use history | less for a scrollable list.
+
+15)chmod 755 <file_name>
+   used for admin rights
+
+16) less <file_name>
+    opens file anyway
+    and only less of it
+
+17) unzip <file_name>
+
+18) ./<file_name_to_run>
+
+19) file <filename>
+      gives the type of file
+
+20) gzrecover <filename.gz>
+    recovers files which are .gz compressed
+    install using apt-get install gzrt
+
+21) md5deep <file_name> >> ex.txt
+    used to find the md5 hash algorithm
+
+22) qemu-img convert <input_file> -0 <out_format> <outfilename>
+    used to convert and compare files
+    install using apt-get install qemu-utils
+
+23) mmls /dev/sdb
+    used to view all partitions and master boot record
+    NOTE: DONT CHANGE ANYTHING ON IT
+
+24)cat <files to concatenate> > output_file
+   it can also be used to view file
+   Eg: cat ss.txt
+
+25) hexeditor <file_name>
+
+26)sudo apt-get <packagename>
+   tar xfv <file_name>.tgz
+   used to extract .tgz files
+                 OR
+   sudo apt-get install <packagename>
+
+   to remove:
+   sudo apt-get remove <packagename>
+
+27)hexdump <file_name> | less
+  use -C
+   gives the hex of a file
+
+28)foremost -vT -o <outputfolder> -i <inputfolder>
+   used for forensic carving of disk images
+
+29)grep
+   used to find patterns
+   eg: grep "hat" <file_name>
+       searches for hat
+       grep ".ma" <file_name>
+       searches for a character followed by ma
+       so, fma,dma,3ma....
+       grep "[fg]ld[0-9]" <file_name>
+       fld0,gld4....
+       grep "b[0-9]0*s" <file_name>
+       b9s,b8000s,b200s,b40s...
+       grep "1[56]:[0-9][0-9]:[0-9][0-9]" <file_name> > outputfile
+       15:33:54 ......
+       note:this can be used for log files.
+       by default it gives the full lin in which it was found
+       if u only want the text use the -o option
+       if u want unique entries at the end type | sort -u
+
+30) df 
+    use in -h mode and check for disk space 
+
+31) aptitude search '~i!~M'
+    used to lsit all installed packages
+
+32)  dpkg
+ its a package installer for debian based machines whci is what kali linux is.
+ dpkg -i <filename.deb>
+ will install the file
+ dpkg -l | grep '(key owrd to search for the software)
+ this will give u the software name
+ dpkg -r <softwarename>
+ will uninstall the software
+             
+33) reversing
+
+objdump -M intel -D a.out | grep -A20 main.:
+	
+gdb -q ./a.out
+
+-break main
+-run
+-info registers
+-quit
+
+gcc -g 1.c
+gdb -q ./a.out
+-list
+-disassemble main
+
+x=examine
+
+how to display memory to be examined??
+o
+x
+u
+t
+x/x $eip??
+
+
+In the first example (x/x $eip), the first value displayed (0x8048384) is the address of the next instruction to be executed, while the second value displayed (0x00fc45c7) is the value FOUND at that address, i.e. the binary value of the next instruction to be executed.
+
+As to your second example (x/2x $eip), the "multiple units" are not at the SAME address, but STARTING at the given address... for example, the first value shown (assuming $eip is the same as in your first example) at address 0x8048384 would still be 0x00fc45c7, but the next value would be whatever value is in the next address, 0x8048388. "x/x" is ideal for dumping the values of a RANGE of addresses, i.e., the values in an array, etc.
+
+b
+h
+w
+g
+
+sizes of the addressess
+
+x/8xb $eip = what is stored in the 8 addresses after the address at which eip is pointing. 
+
+setle = set al =1 if less than or equal to
+; Conditional Jump
+test cl, cl   ; set ZF to 1 if cl == 0
+je 0x804f430  ; jump if ZF ==1
+
+0x000000000040078c <+0>:	push   rbp
+   0x000000000040078d <+1>:	mov    rbp,rsp
+   0x0000000000400790 <+4>:	sub    rsp,0x10
+=> 0x0000000000400794 <+8>:	mov    DWORD PTR [rbp-0x4],0x0
+   0x000000000040079b <+15>:	jmp    0x4007b0 <main()+36>
+   0x000000000040079d <+17>:	mov    esi,0x4008cc
+   0x00000000004007a2 <+22>:	mov    edi,0x600c80
+   0x00000000004007a7 <+27>:	call   0x400670 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x00000000004007ac <+32>:	add    DWORD PTR [rbp-0x4],0x1
+   0x00000000004007b0 <+36>:	cmp    DWORD PTR [rbp-0x4],0x1
+   0x00000000004007b4 <+40>:	setle  al ; sets al to 1 if true else 0
+   0x00000000004007b7 <+43>:	test   al,al ; if al = 0 then the test is false and will return 0
+   0x00000000004007b9 <+45>:	jne    0x40079d <main()+17> ; basically checks if the previous statement is true or not , it will jump if not true
+   0x00000000004007bb <+47>:	mov    eax,0x0
+   0x00000000004007c0 <+52>:	leave  
+   0x00000000004007c1 <+53>:	ret    
+
