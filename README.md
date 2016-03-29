@@ -11,8 +11,8 @@ I have split the learning process into many parts based on how they appear in ct
 Good luck!
 
 #### SOME TIPS
-- Use the man pages for commands that you dont know how to use.eg: man grep
-- Use this to access you typing history in a convinient method. 
+>- Use the man pages for commands that you dont know how to use.eg: man grep
+>- Use this to access you typing history in a convinient method. 
 ```sh
 gedit ~/.inputrc
 "\e[A": history-search-backward

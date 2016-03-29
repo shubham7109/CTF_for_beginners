@@ -12,7 +12,7 @@ Good luck!
 
 #### SOME TIPS
 - Use the man pages for commands that you dont know how to use.eg: man grep
--Use this to access you typing history in a convinient method. 
+- Use this to access you typing history in a convinient method. 
 ```sh
 gedit ~/.inputrc
 "\e[A": history-search-backward
