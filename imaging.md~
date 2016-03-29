@@ -5,6 +5,7 @@ Instead of using ftk imager there are alternatives on linux like
 
 - dd command (for converting drive to image)
 
+Also, there is no explaination for file carving.
 
 ### file carving
 
