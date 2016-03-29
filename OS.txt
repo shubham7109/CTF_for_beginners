@@ -46,4 +46,28 @@ and label it persistence. <--- THIS IS IMPORTANT
 
 	Next you need to get USB universal installer. -> http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/
 	Now plug in your drive and open USB universal installer and follow the step for kali linux.
-	make sure that you install it into part 1 of the drive.
+	Make sure that you install it into part 1 of the drive.
+	Now you should turn off your computer and enter the BIOS, the method to which depends on the computer manufacturer.
+	Once you enter your BIOS choose the drive into which linux was installed.
+
+		
+	Once you enter the drive you must realize that an OS is being booted from the external drive
+	SO DONT REMOVE THE DRIVE UNTILL YOU TURN IT OFF.
+	Select live amd64 for normal use (NOTE: in this mode any changes made wont be saved).
+		
+	To create a portable computer we need it to save changes to the drive itself, that is why the persistence partition was created.
+		
+	FOR PERSISTENCE:-
+	
+	- Firstly, boot into the drive and open it in live amd64(mostly not usb persistence but u can try that too) 
+	- Dont do anything just open terminal
+	- Open gparted and check if persistence is mounted to anything, if so unmount. Also check its address eg:/dev/sdb5
+	- Then open terminal and type:
+  		mkdir /mnt/usb
+  		mount /dev/sdb5 /mnt/usb
+  		echo "/ union" >> /mnt/usb/persistence.conf
+  		umount /dev/sdb5
+
+ but if u r booting into 2.0 make sure u boot into live persistence at first and then a persistence icon shud appear on your screen follow the same commands and reboot if the icon disappears after reboot then success.5)sudo apt-get install libxss1 libappindicator1 libindicator7
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome*.deb
