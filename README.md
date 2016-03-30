@@ -25,3 +25,4 @@ gedit ~/.inputrc
 ```
 >- You can get a editor for windows but for linux you can use the default one on terminal using - hexeditor <file_name>
 >- To view hex and ASCII you can use hexdump -C or open the file on DFF. 
+>- You should learn to use grep to find certain text from huge clumps of text. I did it from the man pages for grep.(man grep)
