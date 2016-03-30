@@ -94,3 +94,5 @@ CHECK OUT THIS LINK FOR KALI 2.0 DOWNLOAD WHICH YOU MIGHT NEED -> http://tools.k
 The format for installing stuff using terminal is 
 sudo apt-get install <package name>
 
+sudo apt-get upgrade
+this ensures that the softwares are upto date
