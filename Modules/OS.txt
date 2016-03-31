@@ -1,20 +1,21 @@
 
 
-                        //    THE OS THAT YOU CHOOSE TO USE IS VERY IMPORTANT BASED ON YOUR NEED
+//    THE OS THAT YOU CHOOSE TO USE IS VERY IMPORTANT BASED ON YOUR NEED
 
-I recommend using KALI linux 1.0/2.0 .
+I recommend using KALI linux 1.0/2.0/2016.1 .
 Its fairly useful because it has many preinstalled stuff that you will need. 
 There are many ways to get it on your PC and here I have explained all the ways which i found to 
 be neat and useful.
 
-// IF YOU CHOOSE KALI LINUX 1.0 (DONT IGNORE IT JUST CUZ IT IS OLDER, I STILL USE IT :p)
+// IF YOU CHOOSE KALI LINUX 1.0 (DONT IGNORE IT JUST CUZ IT IS OLDER, I STILL USE IT :P)
 
 1) virtual box
 
 	This is the most efficient and best method because if there are any errors that occus in your pc or 
 you end up messing up your NIC(a little) it wont be much of a worry cuz it is only on virtual box.
 Virtual box is a software on which OSs' are virtually run, so you can run any other version of linux that you like as
-well.
+well. The only disadvantages of vitual box is that, it puts high stress on your ram since it operates two OS's at the same time.
+So I reccomend using this if you think your computer can handle it.
 
 	To set this up you need to download an appropriate version of virtual box
 	LINK: https://www.virtualbox.org/wiki/Downloads 
@@ -22,8 +23,10 @@ well.
 
 	Im not sure if 1.0 is available so ill put it up.
 	
-	Then you just install virtual box and click new.
+	Here is a youtube link to help you install Kali Linux
+	https://www.youtube.com/watch?v=YzWERO6sRUM
 	
+	Then you just install virtual box and click new.
 	Name your machine whatever and choose the OS version
 	SET it to about 1/2 of your total RAM or 1/4th of RAM.
 	create a new virtual hard disk and dynamically allocate about 10 GB.
@@ -32,7 +35,7 @@ well.
 
 2) usb booting with persistence
 
-	This is the method that I used. You will need a USB or hard drive - external.
+	This is the method that I use. You will need a USB or hard drive - external.
 Download and install minitool partition wizard. If it is recommended that you use 
 the whole drive, if USB, and you wipe the drive. In this method the external drive acts as portable computer
 which can be plugged into any computer and booted into. Partition the USB into 2(or3)
@@ -91,8 +94,8 @@ NTFS  - how much ever - for memory not related to linux, ie. for your movies or 
 
 
 CHECK OUT THIS LINK FOR KALI 2.0 DOWNLOAD WHICH YOU MIGHT NEED -> http://tools.kali.org/tools-listing
-The format for installing stuff using terminal is 
-sudo apt-get install <package name>
+The format for installing stuff using terminal is :
+sudo apt-get install <packagen-name>
 
+The command line to upgrade all softwares in linux upto date : 
 sudo apt-get upgrade
-this ensures that the softwares are upto date
