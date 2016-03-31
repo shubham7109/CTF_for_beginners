@@ -3,10 +3,10 @@
 
 ----------
 [This](https://cyfor.engineering.nyu.edu/_modules/cryptography/)  link has some lessons for hashing including but it is fairly small so in order to get the hang of it check this out!
-Image 1
+<br>Image 1<br>
 ![image 1](https://cdn1.lockerdome.com/uploads/044c53841c1a84261b513211a680f2cef00cc0df06d1aa762cef4986544ee647_large)
-
-Image 2
+<br>
+Image 2<br>
 ![image 2](https://lh3.googleusercontent.com/-zfIuInqg64U/VvwSeVJCI5I/AAAAAAAAAwI/YggPJvy6bpYyLl-a7_ZqX6jfhSpUDGqLw/s0/044c53841c1a84261b513211a680f2cef00cc0df06d1aa762cef4986544ee647_large.jpeg "044c53841c1a84261b513211a680f2cef00cc0df06d1aa762cef4986544ee647_large.jpeg")
 
 there are many hashing algorithms and you can use any using the command line.
