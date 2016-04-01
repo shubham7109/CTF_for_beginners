@@ -16,7 +16,7 @@ EVER!!!!!
 Good luck!
 
 #### SOME TIPS
->- Use the mannual pages for commands that you dont know how to use eg: man grep
+>- Use the man pages for commands that you dont know how to use eg: man grep
 >- Use this to access you typing history in a convinient method. 
 ```sh
 gedit ~/.inputrc
