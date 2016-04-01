@@ -1,6 +1,6 @@
 ////////////////////////////         IMPORTANT COMMANDS
 
-1)  cp(sudo cp - for admin rights)
+1)  cp ('sudo cp' for admin rights)
     
     used to copy
     cp <file_name> <address>
@@ -13,51 +13,42 @@
     refers to admin rights
 
 3)  cd
-    
     used to move terminal to a directory
     cd <address_that _can_be_seen_from_current_dir>
     
     NOTE: 
-    cd / takes u to filesystem
-    cd ~ takes u to /home/omegashenron
-    cd .. takes u out in directory
+    cd /  takes u to filesystem
+    cd ~  takes u to /home/username
+    cd .. takes u out of the current directory
     
-4)  pwd(print working directory)
-    
+4)  pwd (print working directory)
     prints current directory
     
 5)  mv 
-    
     used to rename or move a file
-    
     mv <filename> <newname>
     mv <filename> <address>
     
-6)  mkdir 
-    
+6)  mkdir
     used to create a directory
     mkdir <directory>
     mkdir <newaddress>
     eg: sudo mkdir /mnt/usb/lol
     
 7)  rm/rmdir
-    
     used to delete file
     rm <filename>
     rmdir <empty_directory>
     rm -r <direcctorywithstuff>
     
 8)  man
-    
     used to get help
     eg: man cp
     
 9)  du -sh
-    
     used for memry space
     
 10) free -m
-    
     how mch free memory
     
 11) top
@@ -65,17 +56,18 @@
     
 12) uname -a
     system info
+    
 13) lsb_release -a
     system info
  
-14)	history 
+14) history 
 	The history command shows a very long list of commands that you have typed. 
 	Each command is displayed next to a number.
  	You can type !x to execute a previously typed command from the list (replace the X with a number). 
 	If you history output is too long, then use history | less for a scrollable list.
 
-15)chmod 755 <file_name>
-   used for admin rights
+15) chmod 755 <file_name>
+    used for admin rights
 
 16) less <file_name>
     opens file anyway
@@ -83,17 +75,18 @@
 
 17) unzip <file_name>
 
-18) ./<file_name_to_run>
+18)  ./<file_name_to_run>
+     used to run a file
 
-19) file <filename>
-      gives the type of file
+19)  file <filename>
+     gives the type of file
 
 20) gzrecover <filename.gz>
     recovers files which are .gz compressed
-    install using apt-get install gzrt
+    install using 'apt-get install gzrt'
 
 21) md5deep <file_name> >> ex.txt
-    used to find the md5 hash algorithm
+    used to find the md5 hash of a given file
 
 22) qemu-img convert <input_file> -0 <out_format> <outfilename>
     used to convert and compare files
@@ -103,31 +96,36 @@
     used to view all partitions and master boot record
     NOTE: DONT CHANGE ANYTHING ON IT
 
-24)cat <files to concatenate> > output_file
-   it can also be used to view file
-   Eg: cat ss.txt
+24) cat <files to concatenate> > output_file
+    it can also be used to view file
+    Eg: cat ss.txt
 
 25) hexeditor <file_name>
 
-26)sudo apt-get <packagename>
-   tar xfv <file_name>.tgz
-   used to extract .tgz files
-                 OR
-   sudo apt-get install <packagename>
+26) sudo apt-get <packagename>
+             OR
+    sudo apt-get install <packagename>
+    To install a specific software
 
-   to remove:
-   sudo apt-get remove <packagename>
+    To remove:
+    sudo apt-get remove <packagename>
+    To remove a specific software
 
-27)hexdump <file_name> | less
-  use -C
-   gives the hex of a file
+27) hexdump <file_name> | less
+    use -C
+    gives the hex of a file
 
-28)foremost -vT -o <outputfolder> -i <inputfolder>
-   used for forensic carving of disk images
+28) foremost -vT -o <outputfolder> -i <inputfolder>
+    used for forensic carving of disk images/Recovering hidden files within a file
+    
+29) ls
+    List the files in the current directory
+    ls -l
+    List all the files with details per file in the current directory
 
-29)grep
-   used to find patterns
-   eg: grep "hat" <file_name>
+30) grep
+    used to find patterns
+    eg: grep "hat" <file_name>
        searches for hat
        grep ".ma" <file_name>
        searches for a character followed by ma
@@ -150,19 +148,17 @@
     used to lsit all installed packages
 
 32)  dpkg
- its a package installer for debian based machines whci is what kali linux is.
- dpkg -i <filename.deb>
- will install the file
- dpkg -l | grep '(key owrd to search for the software)
- this will give u the software name
- dpkg -r <softwarename>
- will uninstall the software
+     its a package installer for debian based machines whci is what kali linux is.
+     dpkg -i <filename.deb>
+     will install the file
+     dpkg -l | grep '(key owrd to search for the software)
+     this will give u the software name
+     dpkg -r <softwarename>
+     will uninstall the software
              
 33) reversing
-
-objdump -M intel -D a.out | grep -A20 main.:
-	
-gdb -q ./a.out
+    objdump -M intel -D a.out | grep -A20 main.:
+    gdb -q ./a.out
 
 -break main
 -run
