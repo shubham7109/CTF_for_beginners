@@ -223,5 +223,5 @@ je 0x804f430  ; jump if ZF ==1
 for opening the file manager of the current directory.
 
 35) how to remove package
-sudo apt-get --purge remove ayttm
+sudo apt-get --purge remove <packagename>
 
