@@ -12,7 +12,7 @@ I have split the learning process into many parts based on how they appear in CT
 
 NOTE: REMEMBER THAT THE MOST IMPORTANT THING TO LEARN IS NOT SOME CONCEPT
 BUT HOW TO LEARN IT ie. INFORMATION GATHERING. THIS IS THE MOST IMPORTANT SKILL
-EVER!!!!!
+EVER!!!!
 Good luck!
 
 #### SOME TIPS
