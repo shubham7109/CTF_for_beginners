@@ -1,4 +1,4 @@
-# CTF4Beginners
+# CTF for beginners
 
 This is a repository dedicated to people beginning to learn cyber forensics.
 I have split the learning process into many parts based on how they appear in CTF's.
